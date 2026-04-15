@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KnuckleBones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>KnuckleBones</h1>
+
+<div id="lobby">
+  <input id="nameInput" placeholder="Enter your name">
+  <button onclick="joinGame()">Join Game</button>
+</div>
+
+<p id="status">Connecting...</p>
+
+<div id="gameContainer">
+
+  <!-- Opponent -->
+  <div class="boardSection">
+    <h2 id="oppLabel">Opponent</h2>
+    <div class="colScores" id="oppScores"></div>
+    <div id="oppBoard" class="grid"></div>
+  </div>
+
+  <!-- Center Panel -->
+  <div id="centerPanel">
+    <p id="score">Score: 0 - 0</p>
+    <button id="rematchBtn" style="display:none;" onclick="requestRematch()">Rematch</button>
+
+    <h3>Die</h3>
+    <div id="die">-</div>
+  </div>
+
+  <!-- Player -->
+  <div class="boardSection">
+    <h2 id="playerLabel">You</h2>
+    <div class="colScores" id="myScores"></div>
+    <div id="board" class="grid"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
